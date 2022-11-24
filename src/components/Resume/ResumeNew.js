@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/andresvcc/portfolio/master/src/Assets/CV_Andres_Caballero.pdf";
+  "https://raw.githubusercontent.com/andresvcc/Dev-Portfolio/master/src/Assets/CV_Andres_Caballero.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
