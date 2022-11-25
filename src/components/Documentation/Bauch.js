@@ -4,12 +4,12 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
-import pdf from "../../Assets/../Assets/documentation.pdf";
+import pdf from "../../Assets/../Assets/Bauch.pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-"https://raw.githubusercontent.com/andresvcc/Dev-Portfolio/master/src/Assets/documentation.pdf";
+"https://raw.githubusercontent.com/andresvcc/Dev-Portfolio/master/src/Assets/Bauch.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);

@@ -35,7 +35,7 @@ function Projects() {
               imgPath={hintegral}
               isBlog={false}
               title="H-integral"
-              description="Development of a self-managed survey platform for monitoring and assessing the health status of pregnant mothers."
+              description="Development of a survey platform for monitoring and assessing the health status of pregnant mothers."
               ghLink="/hintegral"
             />
           </Col>
@@ -44,8 +44,17 @@ function Projects() {
               imgPath={Ademag}
               isBlog={false}
               title="Violence Basta"
-              description="Graphic designer and Web developer of the violence basta campaign, "
+              description="Graphic designer and Web developer of the violence basta campaign"
               demoLink="https://www.ademag.org"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Ademag}
+              isBlog={false}
+              title="Bauch"
+              description="Project management and development of a front-end application to pilot an ERP."
+              ghLink="/bauch"
             />
           </Col>
         </Row>

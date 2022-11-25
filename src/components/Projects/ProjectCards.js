@@ -7,14 +7,15 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Body>
+      <Card.Body className="d-flex flex-column align-items-stretch" >
         <Card.Title>{props.title}</Card.Title>
 
         <Card.Img variant="top" src={props.imgPath} alt="card-img" />
 
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Text style={{ textAlign: "justify", height: '80px'}}>
           {props.description}
         </Card.Text>
+
         {
           props.ghLink ? (
             <Button variant="primary" href={props.ghLink} target="_blank">
@@ -24,21 +25,13 @@ function ProjectCards(props) {
           ): null
         }
 
-        {"\n"}
-        {"\n"}
-
         {
           props.demoLink ? (
-            <Button
-              variant="primary"
-              href={props.demoLink}
-              target="_blank"
-              style={{ marginLeft: "10px" }}
-            >
+            <Button variant="primary" href={props.demoLink} target="_blank">
               <CgWebsite /> &nbsp;
-              {props.demo ? "Demo" : "Link To Website"}
+              {"Link To Website"}
             </Button>
-          ):null
+          ): null
         }
       </Card.Body>
     </Card>

@@ -7,6 +7,8 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Hintegral from "./components/Documentation/Hintegral";
+import Bauch from './components/Documentation/Bauch';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -41,6 +43,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/hintegral" element={<Hintegral />} />
+          <Route path="/bauch" element={<Bauch />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
