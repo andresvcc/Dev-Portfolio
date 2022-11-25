@@ -44,7 +44,7 @@ function Projects() {
               imgPath={Ademag}
               isBlog={false}
               title="Violence Basta"
-              description="Digital manager, graphic designer and web developer of the violence basta campaign"
+              description="Graphic designer and Web developer of the violence basta campaign, "
               demoLink="https://www.ademag.org"
             />
           </Col>
