@@ -29,7 +29,7 @@ function ProjectCards(props) {
           props.demoLink ? (
             <Button variant="primary" href={props.demoLink} target="_blank">
               <CgWebsite /> &nbsp;
-              {"Link To Website"}
+              {props.demo ? "Link to Demo" : "Link To Website"}
             </Button>
           ): null
         }

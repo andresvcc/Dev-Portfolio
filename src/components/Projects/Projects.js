@@ -6,7 +6,7 @@ import Ademag from "../../Assets/Projects/ademag.png";
 import hintegral from "../../Assets/Projects/hintegral.png";
 import bauch from "../../Assets/Projects/bauch.png";
 import meister from "../../Assets/Projects/meister.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import dashboard from "../../Assets/Projects/dashboard.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
@@ -21,6 +21,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={dashboard}
+              isBlog={false}
+              title="Material-ui Dashboard"
+              description="an example of a dashboard with reusable components from the Material-ui library"
+              demoLink="http://www.dashboard.andrescaballero.ch/dashboards/analytics"
+              demo
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={meister}
@@ -57,6 +67,7 @@ function Projects() {
               ghLink="/bauch"
             />
           </Col>
+          
         </Row>
         
       </Container>
