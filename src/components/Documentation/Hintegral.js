@@ -4,12 +4,12 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
-import pdf from "../../Assets/../Assets/documentation3.pdf";
+import pdf from "../../Assets/../Assets/documentation.pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-"https://raw.githubusercontent.com/andresvcc/Dev-Portfolio/master/src/Assets/documentation3.pdf";
+"https://raw.githubusercontent.com/andresvcc/Dev-Portfolio/master/src/Assets/documentation.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -23,8 +23,8 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Particle />
         <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Document file={resumeLink} className="d-flex flex-column justify-content-center align-items-center">
+            {[...new Array(21)].map((val, index)=><Page key={index} pageNumber={index + 1} scale={width > 786 ? 1.7 : 0.6} />)}
           </Document>
         </Row>
       </Container>
