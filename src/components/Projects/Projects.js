@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import Ademag from "../../Assets/Projects/ademag.png";
 import hintegral from "../../Assets/Projects/hintegral.png";
-import editor from "../../Assets/Projects/codeEditor.png";
+import bauch from "../../Assets/Projects/bauch.png";
 import meister from "../../Assets/Projects/meister.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
@@ -50,7 +50,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Ademag}
+              imgPath={bauch}
               isBlog={false}
               title="Bauch"
               description="Project management and development of a front-end application to pilot an ERP."
