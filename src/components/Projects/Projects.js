@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import Ademag from "../../Assets/Projects/ademag.png";
 import hintegral from "../../Assets/Projects/hintegral.png";
+import osp from "../../Assets/Projects/osp.png";
 import bauch from "../../Assets/Projects/bauch.png";
 import meister from "../../Assets/Projects/meister.png";
 import dashboard from "../../Assets/Projects/dashboard.png";
@@ -21,6 +22,15 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={osp}
+              isBlog={false}
+              title="OSP"
+              description="Development of a unified parking management platform for over 60 cities in Europe."
+              ghLink="/osp"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={dashboard}

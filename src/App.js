@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Hintegral from "./components/Documentation/Hintegral";
 import Bauch from './components/Documentation/Bauch';
+import Osp from './components/Documentation/Osp';
 
 import {
   BrowserRouter as Router,
@@ -44,6 +45,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/hintegral" element={<Hintegral />} />
           <Route path="/bauch" element={<Bauch />} />
+          <Route path="/osp" element={<Osp />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
